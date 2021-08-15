@@ -1,0 +1,40 @@
+// Responsive mixins
+
+@mixin tablet {
+  @media only screen and (min-width: 500px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media only screen and (min-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin ie-only {
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    @content;
+  }
+}
+@mixin properties_browser($property, $value) {
+  -webkit-#{$property}: $value;
+  -moz-#{$property}: $value;
+  -o-#{$property}: $value;
+  #{$property}: $value;
+}
+
+@mixin padding-margin($property, $top, $right, $bottom, $left) {
+  @if $top != none {
+    #{$property}-top: $top;
+  }
+  @if $right != none {
+    #{$property}-right: $right;
+  }
+  @if $bottom != none {
+    #{$property}-bottom: $bottom;
+  }
+  @if $left != none {
+    #{$property}-left: $left;
+  }
+}
