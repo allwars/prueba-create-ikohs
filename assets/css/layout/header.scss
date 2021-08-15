@@ -1,0 +1,76 @@
+@import "../utils/variables";
+@import "../utils/mixin";
+.header {
+  min-height: 6rem;
+  display: flex;
+  flex-direction: column;
+  &--naranja {
+    background: $naranja;
+  }
+
+  @include desktop {
+    flex-direction: row;
+  }
+
+  .header__tittle {
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include desktop {
+      height: auto;
+      width: 50%;
+      @include padding-margin(padding, none, 2rem, none, 2rem);
+      @include padding-margin(margin, none, none, none, 4rem);
+      justify-content: flex-start;
+    }
+    img {
+      height: 45px;
+      @include padding-margin(margin, none, 1rem, none, none);
+    }
+    h2 {
+      font-weight: 500;
+      font-size: 1.7rem;
+    }
+  }
+  .header__navigation {
+    width: 100%;
+    @include padding-margin(margin, none, 2rem, none, none);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    ul {
+      width: 100%;
+      list-style: none;
+      @include padding-margin(padding, 0, 0, 0, 0);
+      @include padding-margin(margin, 0, 0, 0, 0);
+      display: flex;
+      align-content: space-around;
+      justify-content: space-between;
+      @include desktop {
+        width: 80%;
+        @include padding-margin(padding, none, 4rem, none, none);
+      }
+      .header__navigation__list {
+        width: 25.1%;
+        height: 3rem;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        text-decoration: none;
+        &--rojo {
+          background: $rojo-link;
+        }
+        &:hover {
+          background: $rojo-link-hover;
+        }
+        a {
+          text-decoration: none;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}

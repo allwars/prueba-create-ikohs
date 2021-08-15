@@ -1,0 +1,297 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap");
+* {
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0 auto;
+  box-sizing: content-box;
+  width: 100%;
+  height: 100vh;
+}
+body .header {
+  min-height: 6rem;
+  display: flex;
+  flex-direction: column;
+}
+body .header--naranja {
+  background: #ff983d;
+}
+@media only screen and (min-width: 1024px) {
+  body .header {
+    flex-direction: row;
+  }
+}
+body .header .header__tittle {
+  width: 100%;
+  height: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (min-width: 1024px) {
+  body .header .header__tittle {
+    height: auto;
+    width: 50%;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    margin-left: 4rem;
+    justify-content: flex-start;
+  }
+}
+body .header .header__tittle img {
+  height: 45px;
+  margin-right: 1rem;
+}
+body .header .header__tittle h2 {
+  font-weight: 500;
+  font-size: 1.7rem;
+}
+body .header .header__navigation {
+  width: 100%;
+  margin-right: 2rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+body .header .header__navigation ul {
+  width: 100%;
+  list-style: none;
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  display: flex;
+  align-content: space-around;
+  justify-content: space-between;
+}
+@media only screen and (min-width: 1024px) {
+  body .header .header__navigation ul {
+    width: 80%;
+    padding-right: 4rem;
+  }
+}
+body .header .header__navigation ul .header__navigation__list {
+  width: 25.1%;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+body .header .header__navigation ul .header__navigation__list--rojo {
+  background: #c0392b;
+}
+body .header .header__navigation ul .header__navigation__list:hover {
+  background: #e74c3c;
+}
+body .header .header__navigation ul .header__navigation__list a {
+  text-decoration: none;
+  color: #ffffff;
+}
+body .content {
+  height: calc(100% - 288px);
+  display: flex;
+  overflow-y: scroll;
+}
+@media only screen and (min-width: 500px) {
+  body .content {
+    height: calc(100% - 232px);
+  }
+}
+@media only screen and (min-width: 1024px) {
+  body .content {
+    justify-content: space-between;
+    height: calc(100% - 184px);
+  }
+}
+body .content section {
+  width: 100%;
+  height: 100%;
+  min-height: 45rem;
+  padding-top: 0;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  background: #ffffff;
+}
+@media only screen and (min-width: 500px) {
+  body .content section {
+    height: 100%;
+    min-height: 25rem;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  body .content section {
+    margin-left: 4rem;
+    height: 100%;
+    min-height: 25rem;
+  }
+}
+body .content section article {
+  border-bottom: 1px solid #000000;
+  padding-top: 1rem;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+}
+body .content section article:last-child {
+  border-bottom: none;
+}
+body .content section article .content__tittle {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+body .content section article:nth-of-type(2) .content__text {
+  padding-left: 1rem;
+  margin-left: 1rem;
+  border-left: 4px solid #d0d0d0;
+}
+body .content section article .content__text {
+  margin-top: 0.8rem;
+}
+body .content aside {
+  display: none;
+}
+@media only screen and (min-width: 1024px) {
+  body .content aside {
+    width: 35%;
+    max-width: 25%;
+    height: 100%;
+    min-height: 25rem;
+    padding-top: 1rem;
+    margin-right: 4rem;
+    display: flex;
+    align-content: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: #008000;
+  }
+  body .content aside .content__add {
+    width: 85%;
+    height: 142px;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    display: block;
+  }
+  body .content aside .content__add--orange {
+    background: #ff983d;
+  }
+}
+body .content--grey {
+  background: #f0f0f0;
+}
+body .footer {
+  min-height: 5.5rem;
+  display: flex;
+  background: #ff983d;
+  justify-content: space-between;
+  padding-top: 0;
+  padding-right: 2rem;
+  padding-bottom: 0;
+  padding-left: 2rem;
+  align-items: center;
+  flex-direction: column;
+}
+@media only screen and (min-width: 500px) {
+  body .footer {
+    flex-direction: row;
+  }
+}
+body .footer ul {
+  background: #ff983d;
+  width: 100%;
+  list-style: none;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+@media only screen and (min-width: 500px) {
+  body .footer ul {
+    align-content: space-around;
+    justify-content: space-between;
+    width: 50%;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  body .footer ul {
+    padding-left: 4rem;
+    width: 35%;
+  }
+}
+body .footer ul .footer__list {
+  width: 25%;
+  height: 3rem;
+  background: #c0392b;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+body .footer ul .footer__list:hover {
+  background: #e74c3c;
+}
+body .footer ul .footer__list a {
+  text-decoration: none;
+  color: #ffffff;
+}
+body .footer .footer__rrss {
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+@media only screen and (min-width: 500px) {
+  body .footer .footer__rrss {
+    width: 30%;
+    padding-left: 0;
+    margin-bottom: 0;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  body .footer .footer__rrss {
+    width: 25%;
+    padding-right: 4rem;
+  }
+}
+@media only screen and (-ms-high-contrast: none) and (min-width: 500px), only screen and (-ms-high-contrast: active) and (min-width: 500px) {
+  body .footer .footer__rrss {
+    margin-top: 2rem;
+  }
+}
+body .footer .footer__rrss .footer__rrss__list {
+  width: 13%;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+body .footer .footer__rrss .footer__rrss__list--marron {
+  background: #874000;
+}
+body .footer .footer__rrss .footer__rrss__list:hover {
+  background: #e74c3c;
+}
+body .footer .footer__rrss .footer__rrss__list a {
+  text-decoration: none;
+  color: #ffffff;
+}
+@media only screen and (min-width: 500px) {
+  body .footer .footer__rrss .footer__rrss__list {
+    width: 34%;
+  }
+}
